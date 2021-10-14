@@ -1,9 +1,9 @@
-body,h1,h3,p{
+body,h1,h3,p,ul{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #FFDB01;
+    background-color: rgb(185, 224, 248);
     font-family: 'Indie Flower', cursive;
 }
 /* Page Layout */
@@ -11,7 +11,8 @@ body{
     display: grid;
     grid-template-columns: 35% auto auto;
     grid-template-areas: 
-    'header nav nav'
+    'header header header'
+    'nav nav nav'
     'main main main'
     'footer footer footer';
     overflow: hidden;
@@ -20,18 +21,20 @@ body{
 /* Header */
 header{
     grid-area:header ;
-    background-color: white;
+    /* background-color: rgb(185, 224, 248); */
     /* background-color: #fa9b96; */
-    padding-left: 30px;
+    display: block;
+    margin: auto;
 }
 #logo{
-    height: 180px;
+    height: 200px;
 }
+
 nav{
     grid-area: nav;
-    background-color: white;
-    /* background-color: #fa9b96; */
-    padding-left: 200px;
+    background-color: rgb(185, 224, 248);
+    border-top: rgba(182, 181, 171, 0.788) 1.5px solid;
+    border-bottom: rgba(182, 181, 171, 0.788) 1.5px solid;
     min-width: 100%;
 }
 main{
@@ -45,21 +48,30 @@ footer{
     grid-area: footer;
 }
 /* Nav Styling */
+ul{
+    list-style-type: none;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom:4px;
+}
 .topnav a {
-    float: left;
     display: block;
-    color: #FFC212;
-    text-align: center;
-    margin: 70px 13px;
+    color: rgb(245, 245, 88);
+    padding: 14px 16px;
+    
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
   }
   /* Nav Links with Hover Effect */
   .topnav a:hover{
-      background-color:#FFC212 ;
-      color: #FE9033;
-      padding: 5px;
+      background-color:rgb(245, 245, 88);
+      color: rgb(173, 217, 245);
+      
       border-radius: 5px;
       box-shadow:  3px 1px rgba(0, 0, 0, 0.082), 0 2px 3px rgba(0,0,0,0.24);
   }
@@ -75,12 +87,14 @@ footer{
   /* Welcome Message Box */
   .welcome{
       background-color: rgba(240, 206, 14, 0.836);
+      border: 5px outset rgba(182, 181, 171, 0.788);
       width:40%;
       margin-left: 25rem;
       margin-top: 20px;
       margin-bottom: 20px;
       padding: 30px;
-      color: white;
+      color: rgb(245, 245, 88);
+      /* color: rgb(253, 243, 185); */
       height: 400px;
       
   }
@@ -98,7 +112,7 @@ footer{
     display: block;
     margin: auto;
     margin-top: 50px;
-    border: solid 3px rgb(173, 82, 226);
+    /* border: solid 3px rgb(173, 82, 226); */
     border-radius: 50%;
     animation: breathe 7s linear infinite;
 }
@@ -108,14 +122,21 @@ footer{
       0 0 0 40px rgba(173, 82, 226, 0.3), 0 0 0 55px rgba(173, 82, 226, 0.3), 0 0 0 70px rgba(173, 82, 226, 0.3);
     }
     50% {
-        box-shadow: 0 0 0 25px rgba(173, 82, 226, 0.3), 0 0 0 50px rgba(173, 82, 226, 0.3),0 0 0 75px rgba(173, 82, 226, 0.3),
-        0 0 0 100px rgba(173, 82, 226, 0.3), 0 0 0 125px rgba(173, 82, 226, 0.3);
+        box-shadow: 0 0 0 25px rgba(94, 144, 238, 0.3), 0 0 0 50px rgba(94, 144, 238, 0.3),0 0 0 75px rgba(94, 144, 238, 0.3),
+        0 0 0 100px rgba(94, 144, 238, 0.3), 0 0 0 125px rgba(94, 144, 238, 0.3);
          }
     100%{
         box-shadow: 0 0 0 10px rgba(173, 82, 226, 0.3), 0 0 0 25px rgba(173, 82, 226, 0.3),
       0 0 0 40px rgba(173, 82, 226, 0.3), 0 0 0 55px rgba(173, 82, 226, 0.3), 0 0 0 70px rgba(173, 82, 226, 0.3)
     }
    }
+footer h1{
+    font-size: 15px;
+}
+footer p{
+    font-size: 10px;
+}
+
   /* Media Queries */
 
   /* When screen size smaller than 600px */
