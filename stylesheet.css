@@ -83,7 +83,7 @@ ul{
   .welcome img{
       height: 450px;
       display: block;
-      margin: auto;
+      margin: 2em auto 2em auto;
   }
   /* Welcome Message Box */
   .welcome{
@@ -99,14 +99,48 @@ ul{
       
       
   }
-  .welcome h1{
-      font-size: 2rem;
+  .welcome .welcomeheading{
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      color: rgb(39, 144, 209);
   }
-  .welcome .welcomemessage{
-      padding-top: 20px;
-      font-weight: bolder;
+  .welcome .message{
+      font-weight: 600;
       font-size: 20px;
+      text-align: left;
+      margin: 0 auto 3rem auto;
+      width: 80%;
   }
+  .message{
+      position: relative;
+      line-height: 2;
+      
+  }
+  .message::before {
+    content:'';
+    position: absolute;
+    background-color: #85C1E9;
+    width: 3px;
+    height: 90%;
+    bottom: 0;
+    left:-10px; 
+  }
+  
+  /* right line */
+  .message::after {
+    content:'';
+    position: absolute;
+    content:'';
+    position: absolute;
+    background-color: #85C1E9;
+    width: 3px;
+    height: 90%;
+    bottom: 0;
+    right:-10px;
+  }
+  
 /* Breathing Animation */
 .breathingcircle .center img{
     height: 75px;
