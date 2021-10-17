@@ -141,20 +141,7 @@ ul{
       display: block;
       margin: 2em auto 2em auto;
   }
-  /* Welcome Message Box */
-  .welcome{
-      /* background-color: rgba(240, 206, 14, 0.836);
-      border: 5px outset rgba(182, 181, 171, 0.788);
-      width:40%;
-      margin-left: 25rem;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding: 30px;
-      color: rgb(245, 245, 88);
-      /* color: rgb(253, 243, 185); */
-      
-      
-  }
+  
   .welcome .welcomeheading{
       font-size: 3rem;
       text-align: center;
@@ -242,22 +229,28 @@ footer p{
   /* Media Queries */
 
   /* When screen size smaller than 600px */
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:last-child) {display: none;}
-    .topnav a.icon {
-      float: right;
+  @media screen and (max-width: 740px) {
+    .checkin .questions{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topnav li:not(:last-child) {
+        display: none;
+    }
+    .topnav .icon {
       display: block;
     }
     /* When menu icon clicked, javascript shows nav items */
     @media screen and (max-width: 1280px) {
         .topnav.responsive {position: relative;}
-        .topnav.responsive a.icon {
+        .topnav.responsive .icon {
           position: absolute;
           right: 0;
           top: 0;
           margin:0;
         }
-        .topnav.responsive a {
+        .topnav.responsive li {
           float: none;
           display: block;
           text-align: left;
