@@ -21,8 +21,6 @@ body{
 /* Header */
 header{
     grid-area:header ;
-    /* background-color: rgb(185, 224, 248); */
-    /* background-color: #fa9b96; */
     display: block;
     margin: auto;
 }
@@ -147,7 +145,7 @@ ul{
       text-align: center;
       margin-top: 3rem;
       margin-bottom: 3rem;
-      color: rgb(39, 144, 209);
+      color: rgb(73, 150, 197);
   }
   .welcome .message{
       font-weight: 600;
