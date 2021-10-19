@@ -42,8 +42,9 @@ footer{
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
     text-align: center;
+    background-color: rgb(34, 31, 41);
 }
 /* Nav Styling */
 ul{
@@ -123,7 +124,13 @@ ul{
     justify-content: center;
     padding: 10px;
     align-items: center;
-    
+}
+.activities-content-rx{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
 }
 .content-img{
     height: 300px;
@@ -135,3 +142,22 @@ ul{
     width: 50%;
     font-size: 18px;
 }
+.foot-icons{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 10px; 
+}
+.foot-icons a i{
+    color: purple;
+}
+ /* Media Queries */
+
+  /* When screen size smaller than 740px */
+  @media screen and (max-width: 740px) {
+    .activities-content, .activities-content-rx{
+        display: flex;
+        flex-direction: column;
+    }
+  }
