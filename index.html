@@ -1,117 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>You Are Not Alone</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <img id="logo" src="images/logo.png" alt="logo"> 
-         </header>
-         
-         <nav>
-             <!-- Top Nav Bar -->
-             <ul class="topnav" id="myTopnav">
-                 <li><a href="index.html">HOME</a></li>
-                 <li><a href="activities.html">SELF-HELP TOOLS</a></li>
-                 <li><a href="#conditions">CONDITIONS</a></li>
-                 <li><a href="#Resources">RESOURCES</a></li>
-                 <li><a href="#Contact">CONTACT</a></li>
-                <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a></li>
-                </ul>
-            <!-- Breathing Animation Modal -->
-            <div id="myBreathmodal" class="modal">
-                <!-- Modal Content -->
-                <div class="modalcontent">
-                    <span class="close">&times;</span>
-                    <div class="pauseandbreathe">
-                        <div class="p2">
-                            <p>Pause for a moment and take a few deep breaths.</p>
-                        </div>
-                        <!-- Animated Breathing Simulator -->
-                        <div class="breathingcircle">
-                            <div class="center">
-                                <img src="images/om-5292606.svg" alt="om symbol">
-                            </div>
-                        </div>
-                    </div>
-                    
+      <header>
+        <img id="logo" src="images/logo.png" alt="logo" />
+      </header>
 
+      <nav>
+        <!-- Top Nav Bar -->
+        <ul class="topnav" id="myTopnav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="activities.html">SELF-HELP TOOLS</a></li>
+          <li><a href="conditions.html">CONDITIONS</a></li>
+          <li><a href="#Resources">RESOURCES</a></li>
+          <li><a href="#Contact">CONTACT</a></li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- Breathing Animation Modal -->
+        <div id="myBreathmodal" class="modal">
+          <!-- Modal Content -->
+          <div class="modalcontent">
+            <span class="close">&times;</span>
+            <div class="pauseandbreathe">
+              <div class="p2">
+                <p>Pause for a moment and take a few deep breaths.</p>
+              </div>
+              <!-- Animated Breathing Simulator -->
+              <div class="breathingcircle">
+                <div class="center">
+                  <img src="images/om-5292606.svg" alt="om symbol" />
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!-- Welcome Message -->
 
-         </nav>
-         <main>
-             <!-- Welcome Message -->
-
-             <div class="welcome">
-                 <img src="images/reflection.jpg" alt="mirror image of girl">
-                 <h1 class="welcomeheading">Welcome! I'm glad you are here.</h1>
-                 <p class="message">This is a safe space. A space where you can be assured that you are not alone.
-                     Many times, our life's journey takes us to dark places. Places where we think we will never come back
-                     from. I am here to tell you that there is light at the end of that dark tunnel. I hope that this site will help you
-                     find your way back to your innerself, the presence that is always here with you. 
-                 </p>
-            </div>
-             <div class="checkin">
-                 <h1 class="heading">Let's Start with a Self-Care Check-In</h1>
-                 <h2>Everyday, ask yourself the following questions. If possible, write down your responses.</h2>
-                 <ol class="questions">
-                     <li>How am I feeling right now?</li>
-                     <li>What physical sensations are present in my body now?</li>
-                     <li>Why do I feel this way?</li>
-                     <li>What is the state of my thinking?</li>
-                     <li>How do I handle stress?</li>
-                     <li>Am I honoring my boundaries?</li>
-                     <li>What makes me happiest?</li>
-                     <li>What am I grateful for?</li>
-                     <li>What are my intentions/goals for today?</li>
-                     <li>How can I help myself reach the goals I set for myself today?</li>
-                 </ol>
-                 <p>These questions are here to assist you in returning to the present moment.
-                    When we return to the present, there is a powerful experience of self-awareness and 
-                    self-recognition taking place.  It is a gentle reminder that your are not alone. Have
-                    fun with these. You do not have to answer all of them at once. Feel free to add to the list.
-                </p>
-                <br>
-                <p>
-                    Sometimes, we tend to get wrapped up in the past and the future that we forget 
-                    what is happening now. No matter what direction your life may be going in, it is 
-                    always good practice to check-in with yourself, the person who matters most in your life.
-                 </p>
-                 <img src="images/man-5875590.svg" alt="man painting himself">
-                 <h2>What to do now?</h2>
-                 <p>After you are done the check-in, take a moment to reflect on your answers. It would be a good practice to
-                     keep a daily record of these check-ins to reference later.
-                    If you find that you don't feel better, please navigate to the <a href="activities.html" >activities</a> section of this site.
-                 </p>
-             </div>
-            
-         </main>
-         <footer>
-             <!-- Add github and gmail icon -->
-             <ul class="foot-icons">
-                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-             <h1>Medical Advice Disclaimer</h1>
-             <p>The information, including but not limited to, text, graphics, images and other material contained on this website are for informational purposes only. No material on this site is intended to be a substitute for professional medical advice, diagnosis or treatment. Always seek the advice of your physician or other qualified health care provider with any questions you may have regarding a medical condition or treatment and before undertaking a new health care regimen, and never disregard professional medical advice or delay in seeking it because of something you have read on this website.    
-            </p>
-
-         </footer>
+        <div class="welcome">
+          <img src="images/reflection.jpg" alt="mirror image of girl" />
+          <h1 class="welcomeheading">Welcome! I'm glad you are here.</h1>
+          <p class="message">
+            This is a safe space. A space where you can be assured that you are
+            not alone. Many times, our life's journey takes us to dark places.
+            Places where we think we will never come back from. I am here to
+            tell you that there is light at the end of that dark tunnel. I hope
+            that this site will help you find your way back to your innerself,
+            the presence that is always here with you.
+          </p>
+        </div>
+        <div class="checkin">
+          <h1 class="heading">Let's Start with a Self-Care Check-In</h1>
+          <h2>
+            Everyday, ask yourself the following questions. If possible, write
+            down your responses.
+          </h2>
+          <ol class="questions">
+            <li>How am I feeling right now?</li>
+            <li>What physical sensations are present in my body now?</li>
+            <li>Why do I feel this way?</li>
+            <li>What is the state of my thinking?</li>
+            <li>How do I handle stress?</li>
+            <li>Am I honoring my boundaries?</li>
+            <li>What makes me happiest?</li>
+            <li>What am I grateful for?</li>
+            <li>What are my intentions/goals for today?</li>
+            <li>
+              How can I help myself reach the goals I set for myself today?
+            </li>
+          </ol>
+          <p>
+            These questions are here to assist you in returning to the present
+            moment. When we return to the present, there is a powerful
+            experience of self-awareness and self-recognition taking place. It
+            is a gentle reminder that your are not alone. Have fun with these.
+            You do not have to answer all of them at once. Feel free to add to
+            the list.
+          </p>
+          <br />
+          <p>
+            Sometimes, we tend to get wrapped up in the past and the future that
+            we forget what is happening now. No matter what direction your life
+            may be going in, it is always good practice to check-in with
+            yourself, the person who matters most in your life.
+          </p>
+          <img src="images/man-5875590.svg" alt="man painting himself" />
+          <h2>What to do now?</h2>
+          <p>
+            After you are done the check-in, take a moment to reflect on your
+            answers. It would be a good practice to keep a daily record of these
+            check-ins to reference later. If you find that you don't feel
+            better, please navigate to the
+            <a href="activities.html">activities</a> section of this site.
+          </p>
+        </div>
+      </main>
+      <footer>
+        <!-- Add github and gmail icon -->
+        <ul class="foot-icons">
+          <li>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-github-alt"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+        <h1>Medical Advice Disclaimer</h1>
+        <p>
+          The information, including but not limited to, text, graphics, images
+          and other material contained on this website are for informational
+          purposes only. No material on this site is intended to be a substitute
+          for professional medical advice, diagnosis or treatment. Always seek
+          the advice of your physician or other qualified health care provider
+          with any questions you may have regarding a medical condition or
+          treatment and before undertaking a new health care regimen, and never
+          disregard professional medical advice or delay in seeking it because
+          of something you have read on this website.
+        </p>
+      </footer>
     </div>
     <script src="menu.js"></script>
-    <script src="https://kit.fontawesome.com/dd2bf8cfd8.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/dd2bf8cfd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
