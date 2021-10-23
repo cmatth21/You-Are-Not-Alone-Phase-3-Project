@@ -1,5 +1,5 @@
 // Closes menu
-function myFunction() {
+function myMenu() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += "responsive";

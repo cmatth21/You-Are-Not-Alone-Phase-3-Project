@@ -68,7 +68,7 @@ ul{
   }
   /* Nav Links with Hover Effect */
   .topnav a:hover{
-      color: rgb(173, 217, 245);
+      color: rgb(190, 195, 199);
       
       border-radius: 5px;
       box-shadow:  3px 1px rgba(0, 0, 0, 0.082), 0 2px 3px rgba(0,0,0,0.24);
@@ -79,8 +79,10 @@ ul{
   }
 /* Main */
 .headerimg{
-    height: 300px;
-    width: 90%;
+    height: 400px;
+    width: 60%;
+    display: block;
+    margin: 2em auto 2em auto;
 }
 .heading{
     text-align: center;
@@ -132,11 +134,14 @@ ul{
     padding: 10px;
     align-items: center;
 }
+
 .content-img{
-    height: 300px;
-    width: 300px;
+    height: 380px;
+    width: 420px;
     margin-right: 20px;
+    margin-left: 20px;
 }
+
 .activities-para{
     text-align: left;
     width: 50%;
@@ -150,7 +155,7 @@ ul{
     margin-top: 10px; 
 }
 .foot-icons a i{
-    color: purple;
+    color: rgb(224, 173, 43);
 }
  /* Media Queries */
 

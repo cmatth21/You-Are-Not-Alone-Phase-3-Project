@@ -1,0 +1,137 @@
+body,h1,h3,p,ul{
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* Page Layout */
+.container{
+    display: grid;
+    grid-template-columns: 35% auto auto;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'main main main'
+    'footer footer footer';
+    overflow: hidden;
+}
+header{
+    grid-area:header ;
+    display: block;
+    margin: auto;
+}
+#logo{
+    height: 200px;
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(34, 31, 41);
+    border-top: rgba(182, 181, 171, 0.788) 1.5px solid;
+    border-bottom: rgba(182, 181, 171, 0.788) 1.5px solid;
+    min-width: 100%;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(34, 31, 41);
+}
+/* Nav Styling */
+ul{
+    list-style-type: none;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom:4px;
+}
+.topnav a {
+    display: block;
+    color: rgb(243, 236, 236);
+    padding: 14px 16px;
+    border: none;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  /* Nav Links with Hover Effect */
+  .topnav a:hover{
+      color: rgb(190, 195, 199);
+      
+      border-radius: 5px;
+      box-shadow:  3px 1px rgba(0, 0, 0, 0.082), 0 2px 3px rgba(0,0,0,0.24);
+  }
+  /* Hides nav icon fullscreen */
+  .topnav .icon {
+    display: none;
+  }
+/* Main */
+.headerimg{
+    height: 500px;
+    display: block;
+    margin: 2em auto 2em auto;
+}
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(50, 126, 50);
+    font-size: 45px;
+}
+.description{
+    width: 80%;
+    margin: 25px auto 25px auto;
+    font-size: 20px;
+}
+#hdgs{
+    display: block;
+    text-align: center;
+
+}
+
+.resources-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.resources-list li a{
+    text-decoration: none;
+    color:rgb(50, 126, 50);
+    font-weight: 600;
+}
+.resources-list li p{
+    color: black;
+}
+.foot-icons{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 10px; 
+}
+.foot-icons a i{
+    color: rgb(224, 173, 43);
+}
+ /* Media Queries */
+
+  /* When screen size smaller than 740px */
+  @media screen and (max-width: 740px) {
+    main{
+        min-width: 80%;
+    
+    }
+    .headerimg{
+        max-width: 80%;
+        height: auto;
+    }
+  }
