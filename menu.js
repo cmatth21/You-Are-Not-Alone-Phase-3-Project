@@ -1,12 +1,10 @@
-// Closes menu
-function myMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += "responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+// Navbar Menu
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navList = document.getElementsByClassName('nav-list')[0]
+
+toggleButton.addEventListener('click', () =>{
+  navList.classList.toggle('active')
+})
 // Modal
 // Get the modal
 var modal = document.getElementById("myBreathmodal");
