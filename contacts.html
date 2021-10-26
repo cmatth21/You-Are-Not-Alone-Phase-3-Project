@@ -12,20 +12,23 @@
         <header>
             <img id="logo" src="images/logo.png" alt="logo" />
           </header>
-        <nav>
-            <!-- Top Nav Bar -->
-            <ul class="topnav" id="myTopnav">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="activities.html">SELF-HELP TOOLS</a></li>
-              <li><a href="conditions.html">CONDITIONS</a></li>
-              <li><a href="resources.html">RESOURCES</a></li>
-              <li><a href="contacts.html">CONTACT</a></li>
-              <li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </li>
-            </ul>
+          <nav class="navbar">
+            <div class="navbar-links">
+              <ul class="nav-icon" id="nav-icon">
+                <li>
+                  <button onclick="myFunction()" class="toggle-button">
+                    <i class="fa fa-bars"></i>
+                  </button>
+                </li>
+                </ul>
+               <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="activities.html">SELF-HELP TOOLS</a></li>
+                <li><a href="conditions.html">CONDITIONS</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+                <li><a href="contacts.html">CONTACT</a></li>
+               </ul>
+            </div>
           </nav>
           <main>
             <img class="headerimg" src="images/flower-1169667.svg" alt="sunflower">
@@ -61,6 +64,6 @@
         crossorigin="anonymous"
       ></script>
     </div>
-    
+    <script src="menu.js"></script>
 </body>
 </html>

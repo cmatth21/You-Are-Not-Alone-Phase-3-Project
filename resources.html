@@ -12,21 +12,24 @@
         <header>
             <img id="logo" src="images/logo.png" alt="logo" />
         </header>
-        <nav>
-            <!-- Top Nav Bar -->
-            <ul class="topnav" id="myTopnav">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="activities.html">SELF-HELP TOOLS</a></li>
-                <li><a href="conditions.html">CONDITIONS</a></li>
-                <li><a href="resources.html">RESOURCES</a></li>
-                <li><a href="contacts.html">CONTACT</a></li>
+        <nav class="navbar">
+          <div class="navbar-links">
+            <ul class="nav-icon" id="nav-icon">
               <li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <button onclick="myFunction()" class="toggle-button">
                   <i class="fa fa-bars"></i>
-                </a>
+                </button>
               </li>
-            </ul>
-          </nav>
+              </ul>
+             <ul class="nav-list">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="activities.html">SELF-HELP TOOLS</a></li>
+              <li><a href="conditions.html">CONDITIONS</a></li>
+              <li><a href="resources.html">RESOURCES</a></li>
+              <li><a href="contacts.html">CONTACT</a></li>
+             </ul>
+          </div>
+        </nav>
           <main>
             <img class="headerimg" src="images/support-2355701_1280.jpg" alt="scrabble pieces spelling out support">
             <h1 class="heading">Resources and Research</h1>
@@ -98,5 +101,6 @@
         crossorigin="anonymous"
       ></script>
     </div>
+    <script src="menu.js"></script>
 </body>
 </html>

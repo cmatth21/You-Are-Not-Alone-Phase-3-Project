@@ -39,15 +39,16 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>  
+
       <!-- Top Nav Bar -->
       <nav class="navbar">
         <div class="navbar-links">
           <ul class="nav-icon" id="nav-icon">
             <li>
-              <a href="#" class="toggle-button">
+              <button onclick="myFunction()" class="toggle-button">
                 <i class="fa fa-bars"></i>
-              </a>
+              </button>
             </li>
             </ul>
            <ul class="nav-list">
@@ -60,6 +61,18 @@
         </div>
       </nav>
       <main>
+          <!-- Random Quote Generator -->
+      <div class=random-qte-gen>
+        <div class=quoteDisplay>
+          <h2 >Quote Generator</h2>
+          <div id=quoteDisplay>
+              <!-- Quotes display here -->
+            <p><i>Click the button below for a quote to meditate on for the day ahead 🌱.<i></p>
+          </div>
+          <button onclick="newQuote()" id="quote-btn">New Quote</button>
+          </div>
+        </div>
+
         <!-- Welcome Message -->
 
         <div class="welcome">
