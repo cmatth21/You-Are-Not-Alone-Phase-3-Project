@@ -108,7 +108,7 @@ button .toggle-button{
 .description{
     width: 80%;
     margin: 25px auto 25px auto;
-    font-size: 1em;
+    font-size: 18px;
 }
 #hdgs{
     display: block;
@@ -160,7 +160,7 @@ button .toggle-button{
 .activities-para{
     text-align: left;
     width: 50%;
-    font-size: 1em;
+    font-size: 18px;
 }
 .foot-icons{
     display: flex;
