@@ -3,8 +3,10 @@ body,h1,h3,p,ul{
     padding: 0;
     line-height: 2;
 }
-body{
+body { 
     font-family: 'Montserrat', sans-serif;
+    background: whitesmoke;
+    background: -webkit-linear-gradient(bottom left, rgb(181, 163, 207),rgb(96, 217, 226), rgb(252, 229, 100));	
 }
 /* Page Layout */
 .container{
@@ -93,15 +95,14 @@ button .toggle-button{
   }
 /* Main */
 .headerimg{
-    height: 500px;
+    height: 400px;
     display: block;
     margin: 2em auto 2em auto;
 }
 .heading{
     text-align: center;
     margin-top: 20px;
-    color: rgb(50, 126, 50);
-    font-size: 45px;
+    font-size: 40px;
 }
 .description{
     width: 80%;
@@ -133,6 +134,7 @@ button .toggle-button{
     justify-items: center;
     justify-content: space-around;
     margin-top: 10px; 
+    list-style-type: none;
 }
 .foot-icons a i{
     color: rgb(224, 173, 43);

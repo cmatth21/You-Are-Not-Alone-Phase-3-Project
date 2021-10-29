@@ -2,15 +2,16 @@ body,h1,h3,p,ul{
     margin: 0;
     padding: 0;
 }
-body{
-    /* background-color: rgb(185, 224, 248); */
+
+body { 
     font-family: 'Montserrat', sans-serif;
-    height:100%;
+    background: whitesmoke;
+    background: -webkit-linear-gradient(bottom left, rgb(181, 163, 207),rgb(96, 217, 226), rgb(252, 229, 100));	
 }
 /* Page Layout */
 .container{
     display: grid;
-    grid-template-columns: 35% auto auto;
+    grid-template-columns: 100% auto auto;
     grid-template-areas: 
     'header header header'
     'nav nav nav'
@@ -47,6 +48,7 @@ footer{
     margin-right: auto;
     text-align: center;
     background-color: rgb(34, 31, 41);
+    width: 100%;
 }
 /* Modal */
 .modal{
@@ -56,8 +58,10 @@ footer{
     left: 35%;
     /* width: 100%;
     height: 100%; */
-    background-color: whitesmoke;
-    border: 8px outset rgba(182, 181, 171, 0.788) ;
+    background: whitesmoke;
+    background: -webkit-linear-gradient(bottom left, rgb(181, 163, 207),rgb(96, 217, 226), rgb(252, 229, 100));
+    
+    border: 8px outset rgba(46, 46, 42, 0.788) ;
     
 }
 .close{
@@ -81,8 +85,7 @@ footer{
     height: 75px;
     display: block;
     margin: auto;
-    /* margin-top: 50px; */
-    /* border: solid 3px rgb(173, 82, 226); */
+    background-image: url();
     border-radius: 50%;
     animation: breathe 7s linear infinite;
 }
@@ -125,11 +128,11 @@ footer{
     min-width:75%;
     padding: 4em;
     background-image: url(images/still\ water.jpg);
-    background-size:100%;
+    background-size:100% 100%;
     background-repeat: no-repeat;
     
   }
-  h2{
+  .quote-title{
     color: whitesmoke;
     font-size: 25px;
   }
@@ -223,15 +226,15 @@ button .toggle-button{
   }
   
   .welcome .welcomeheading{
-      font-size: 3rem;
+      font-size: 2rem;
       text-align: center;
       margin-top: 3rem;
       margin-bottom: 3rem;
-      color: rgb(73, 150, 197);
+      
   }
   .welcome .message{
-      font-weight: 600;
-      font-size: 20px;
+      font-weight: 500;
+      font-size: 2em;
       text-align: left;
       margin: 0 auto 3rem auto;
       width: 80%;
@@ -240,49 +243,51 @@ button .toggle-button{
       position: relative;
       line-height: 2;
   }
+  /* Border Header Line Left */
   .message::before {
     content:'';
     position: absolute;
-    background-color: #85C1E9;
+    background-color: #f5e130;
     width: 3px;
     height: 90%;
     bottom: 0;
-    left:-10px; 
+    left:-15px; 
   }
   
-  /* right line */
+  /* Border Header right line */
   .message::after {
     content:'';
     position: absolute;
     content:'';
     position: absolute;
-    background-color: #85C1E9;
+    background-color: #f5e130;
     width: 3px;
     height: 90%;
     bottom: 0;
     right:-10px;
   }
 .checkin h1{
-    text-align: left;
-    margin-left: 8rem;
-    font-size: 42px;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+    font-size: 2rem;
 }
 .checkin h2{
-    text-align: left;
-    margin-left: 8rem;
+    text-align: center                                                                                                                                                                                                          ;
+    font-size: 1rem;
 }
 .checkin ol{
     margin-left: 25rem;
     line-height: 2;
-    font-size: 23px;
+    font-size: 17px;
     
 }
 .checkin p{
     text-align: left;
-    margin-left: 8rem;
+    margin: 0 auto 3rem auto;
     width: 80%;
-    font-size: 23px;
+    font-size: 17px;
     font-weight: 500;
+    line-height: 2;
 }
 .checkin img{
     height: 450px;
@@ -309,19 +314,42 @@ footer p{
     flex-direction: row;
     justify-items: center;
     justify-content: space-around;
-    margin-top: 10px; 
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 
   /* Media Queries */
 
   /* When screen size smaller than 740px */
   @media screen and (max-width: 740px) {
     .checkin .questions{
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        max-width: 100%;
     }
-   
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome img{
+        max-width: 75%;
+        height: 42%;
+    }
+    .checkin img{
+        max-width: 75%;
+    }
+    .modal{
+        position:fixed;
+        top:15%;
+        left: 15%;
+        max-width: 70%;
+        max-height: 70%;
+    }
+    
     }
     
     /* When menu icon clicked, javascript shows nav items */
