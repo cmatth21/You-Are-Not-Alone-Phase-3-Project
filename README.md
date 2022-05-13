@@ -12,7 +12,7 @@ The most challenging part of creating this project was creating the breathing si
 To resolve the challenges I had with how to create the simulator, I used CSS animation tools.  I had trouble with the JavaScript code
 but played around with it until I fixed it.
 
-## In the fure, I hope to learn more about UX/UI design to modernize the appearance of the site.
+## In the future, I hope to learn more about UX/UI design to modernize the appearance of the site.
 
 Thank you for visiting and happy healing 🙏
 
